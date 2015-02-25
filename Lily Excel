@@ -1,3 +1,4 @@
-Sub test()
-
-End
+Sub countlines()
+LastUsedRow = Worksheets("Sheet1").Cells.Find(What:="*", SearchOrder:=xlRows, SearchDirection:=xlPrevious, LookIn:=xlValues).Row
+MsgBox (LastUsedRow)
+End Sub
